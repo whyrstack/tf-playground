@@ -1,7 +1,7 @@
 # EC2 #
-# output "ec2_server_public_ip" {
-#   value = module.ec2.instance_public_ip
-# }
+output "ec2_server_public_ip" {
+  value = module.instance.instance_public_ip
+}
 
 # EFS #
 # output "efs_id" {
