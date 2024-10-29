@@ -1,0 +1,1 @@
+sudo mount -t efs -o tls,accesspoint=fsap-xxxx fs-xxxx:/ /mnt/efs
