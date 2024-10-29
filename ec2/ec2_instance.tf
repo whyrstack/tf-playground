@@ -14,7 +14,8 @@ resource "aws_eip_association" "this" {
 
 resource "aws_instance" "this" {
   user_data = templatefile("${path.module}/init/user_data.sh", {
-    instance_name = var.instance_name
+    instance_name        = var.instance_name
+    instance_domain_name = var.instance_domain_name
   })
 
   ami           = var.ami

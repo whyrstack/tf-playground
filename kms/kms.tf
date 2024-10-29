@@ -3,7 +3,7 @@ data "aws_caller_identity" "current" {}
 resource "aws_kms_key" "this" {
   enable_key_rotation     = false
   deletion_window_in_days = 20
-  description = "KMS key for EC2 EBS volume encryption"
+  description             = "KMS key for EC2 EBS volume encryption"
 
   policy = <<EOF
 {
